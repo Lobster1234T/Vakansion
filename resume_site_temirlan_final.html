@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Темирлан Мамбеталиев — Unity Developer</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #ffffff;
+      color: #1a202c;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 60px 0;
+      margin-bottom: 50px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 25px;
+      border-bottom: 3px solid #667eea;
+      padding-bottom: 10px;
+    }
+
+    .about-text {
+      background: #f7fafc;
+      padding: 25px;
+      border-radius: 8px;
+      border-left: 4px solid #667eea;
+    }
+    .about-text p {
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin-bottom: 30px;
+    }
+    .project-card {
+      background: white;
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 25px;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+    .project-card:hover {
+      border-color: #667eea;
+      box-shadow: 0 8px 20px rgba(102, 126, 234, 0.15);
+      transform: translateY(-5px);
+    }
+    .project-tag {
+      display: inline-block;
+      background: #e6f0ff;
+      color: #667eea;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .project-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      color: #1a202c;
+    }
+    .project-card p {
+      color: #4a5568;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .project-skills {
+      font-size: 0.85rem;
+      color: #718096;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+    .project-link {
+      display: inline-block;
+      background: #667eea;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .project-link:hover {
+      background: #764ba2;
+    }
+
+    .skills-container {
+      background: #f7fafc;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    .skills-grid {
+      display: grid;
+      gap: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .skill-item {
+      background: white;
+      padding: 18px;
+      border-radius: 8px;
+      border-left: 3px solid #667eea;
+    }
+    .skill-item strong {
+      color: #667eea;
+      display: block;
+      margin-bottom: 8px;
+    }
+    .skill-item p {
+      color: #2d3748;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .contact-box {
+      background: #f7fafc;
+      padding: 30px;
+      border-radius: 10px;
+      border: 2px solid #e2e8f0;
+    }
+    .contact-box p {
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
+    .contact-box a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 30px;
+      border-top: 1px solid #e2e8f0;
+      color: #718096;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+      .projects-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Темирлан Мамбеталиев</h1>
+      <p>Unity Developer • Разработка мобильных игр на Unity • Android / Google Play • 4+ года коммерческой практики</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>Обо мне</h2>
+      <div class="about-text">
+        <p><strong>Unity-разработчик мобильных игр</strong> с фокусом на 2D-проекты под Android. Разрабатываю игры полного цикла: от прототипа и core gameplay до оптимизации, монетизации и публикации в Google Play.</p>
+        <p>Сильнее всего в технической части: архитектура игровых систем, FSM, UI, интеграция SDK и плагинов, настройка рекламы и IAP, работа с производительностью на мобильных устройствах.</p>
+        <p><strong>Основной стек:</strong> Unity, C#, Android, Git, Firebase, Google Play Services.</p>
+        <p><strong>Дата рождения:</strong> 22.05.1997</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Опубликованные проекты</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <span class="project-tag">Action / Platformer</span>
+          <h3>Cat Adventure 2</h3>
+          <p>2D-платформер для Android. Реализовал игровую логику, управление персонажем, систему уровней, физику, UI и сборку проекта под релиз.</p>
+          <div class="project-skills">C#, Physics2D, Tilemap, UI, Android Build</div>
+          <a href="https://play.google.com/store/apps/details?id=com.COOLGAMES.CatAdventure2" class="project-link" target="_blank" rel="noopener">Смотреть на Google Play →</a>
+        </div>
+
+        <div class="project-card">
+          <span class="project-tag">Аркада</span>
+          <h3>Geometry Worlds</h3>
+          <p>Аркадная игра в геометрическом стиле. Сделал core gameplay, обработку препятствий, систему прогресса, UI и полировку игрового флоу под мобильный формат.</p>
+          <div class="project-skills">C#, Gameplay Systems, UI, Save System</div>
+          <a href="https://play.google.com/store/apps/details?id=com.COOLGAMES.GeometryWorlds" class="project-link" target="_blank" rel="noopener">Смотреть на Google Play →</a>
+        </div>
+
+        <div class="project-card">
+          <span class="project-tag">Tower Defense</span>
+          <h3>Fortress Sentinel TD</h3>
+          <p>Tower Defense проект. Разработал логику волн, поведение врагов, апгрейды, баланс экономики и ключевые игровые системы.</p>
+          <div class="project-skills">C#, AI, Wave System, Balance, Gameplay Architecture</div>
+          <a href="https://play.google.com/store/apps/details?id=com.COOLGAMES.FortressSentinelTD" class="project-link" target="_blank" rel="noopener">Смотреть на Google Play →</a>
+        </div>
+
+        <div class="project-card">
+          <span class="project-tag">Аркада</span>
+          <h3>Bubble Hype</h3>
+          <p>Мобильная аркада с внутриигровыми системами монетизации. Реализовал основные механики, магазин, визуальные эффекты и подключение аналитики.</p>
+          <div class="project-skills">C#, VFX, IAP, Analytics, Mobile UX</div>
+          <a href="https://play.google.com/store/apps/details?id=com.COOLGAMES.BubbleHype" class="project-link" target="_blank" rel="noopener">Смотреть на Google Play →</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ключевые навыки</h2>
+      <div class="skills-container">
+        <div class="skills-grid">
+          <div class="skill-item">
+            <strong>Unity / C#</strong>
+            <p>Разработка игровых систем, UI, загрузка сцен, сохранения, внутриигровая логика, работа с мобильными билдами.</p>
+          </div>
+
+          <div class="skill-item">
+            <strong>Архитектура</strong>
+            <p>FSM, ООП, декомпозиция логики по компонентам, построение расширяемых игровых систем без хаоса в коде.</p>
+          </div>
+
+          <div class="skill-item">
+            <strong>Плагины и SDK</strong>
+            <p>Интеграция и использование DOTween, Firebase, рекламы, IAP, аналитики, Google Play Services и сторонних Unity-плагинов.</p>
+          </div>
+
+          <div class="skill-item">
+            <strong>Мобильная оптимизация</strong>
+            <p>Профилирование CPU/GPU, снижение нагрузки, работа с памятью, адаптация под Android-устройства разного уровня.</p>
+          </div>
+
+          <div class="skill-item">
+            <strong>Геймплей</strong>
+            <p>Персонаж, враги, волны, прогрессия, экономика, сложность, игровые циклы и доведение механик до рабочего продакшен-состояния.</p>
+          </div>
+
+          <div class="skill-item">
+            <strong>Релиз и поддержка</strong>
+            <p>Подготовка сборок, публикация в Google Play, обновления, правки после тестов, работа с монетизацией и метриками.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Контакты</h2>
+      <div class="contact-box">
+        <p>👤 <strong>Имя:</strong> Темирлан Мамбеталиев</p>
+        <p>🎂 <strong>Дата рождения:</strong> 22.05.1997</p>
+        <p>📧 <strong>Email:</strong> <a href="mailto:l0788969@gmail.com">l0788969@gmail.com</a></p>
+        <p>📞 <strong>Телефон:</strong> <a href="tel:+996557473773">+996557473773</a></p>
+        <p>📱 <strong>Telegram:</strong> <a href="https://t.me/Lobster_1234" target="_blank" rel="noopener">@Lobster_1234</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026. Темирлан Мамбеталиев — Unity Developer.</p>
+    </footer>
+  </div>
+</body>
+</html>
